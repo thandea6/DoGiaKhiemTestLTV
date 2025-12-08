@@ -1,0 +1,11 @@
+D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\bin\Debug\net8.0\UserManagment.Core.deps.json
+D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\bin\Debug\net8.0\UserManagment.Core.dll
+D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\bin\Debug\net8.0\UserManagment.Core.pdb
+D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.AssemblyInfoInputs.cache
+D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.AssemblyInfo.cs
+D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.csproj.CoreCompileInputs.cache
+D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.dll
+D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\refint\UserManagment.Core.dll
+D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.pdb
+D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\ref\UserManagment.Core.dll

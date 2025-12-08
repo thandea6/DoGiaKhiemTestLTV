@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "UserManagment.API.Controllers.LHBaseController\u00601[[UserManagment.Core.Entities.User, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
