@@ -44,7 +44,7 @@
   {
     "ContainingType": "UserManagment.API.Controllers.LHBaseController\u00602[[UserManagment.Core.Entities.Users, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserManagment.Core.Dtos.UserDTO, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Delete",
-    "RelativePath": "api/User",
+    "RelativePath": "api/User/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -52,7 +52,7 @@
       {
         "Name": "id",
         "Type": "System.Guid",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

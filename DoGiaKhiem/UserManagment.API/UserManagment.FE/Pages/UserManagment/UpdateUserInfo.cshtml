@@ -1,0 +1,141 @@
+﻿@page
+@using UserManagementApp.FE.Models
+@model UserManagementApp.FE.Pages.UserManagment.UpdateUserInfoModel
+@{
+    ViewData["Title"] = "Cập nhật thông tin người dùng";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+  <div class="card shadow">
+ <div class="card-header bg-warning text-dark">
+       <h3 class="mb-0">
+       <i class="bi bi-pencil-square"></i> Cập nhật thông tin người dùng
+     </h3>
+         </div>
+     <div class="card-body">
+   @* Hiển thị thông báo lỗi *@
+       @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+      {
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+<i class="bi bi-exclamation-triangle-fill"></i> @Model.ErrorMessage
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+      }
+
+    @if (Model.UserData != null)
+      {
+        <form method="post">
+@* Hidden field cho UserId *@
+       <input type="hidden" asp-for="UserData.UserId" />
+
+      <div class="mb-3">
+       <label class="form-label">
+        <i class="bi bi-key"></i> Mã người dùng
+       </label>
+  <input type="text" class="form-control" value="@Model.UserData.UserId" disabled readonly />
+      <div class="form-text">Mã người dùng không thể thay đổi</div>
+ </div>
+
+<div class="mb-3">
+         <label asp-for="UserData.FullName" class="form-label">
+     <i class="bi bi-person"></i> Họ và tên <span class="text-danger">*</span>
+      </label>
+      <input asp-for="UserData.FullName" class="form-control" placeholder="Nhập họ và tên" required />
+        <span asp-validation-for="UserData.FullName" class="text-danger"></span>
+    </div>
+
+  <div class="mb-3">
+       <label asp-for="UserData.BirthDate" class="form-label">
+      <i class="bi bi-calendar"></i> Ngày sinh <span class="text-danger">*</span>
+    </label>
+         <input asp-for="UserData.BirthDate" type="date" class="form-control" required />
+       <span asp-validation-for="UserData.BirthDate" class="text-danger"></span>
+       </div>
+
+          <div class="mb-3">
+   <label asp-for="UserData.EmailAddress" class="form-label">
+   <i class="bi bi-envelope"></i> Email <span class="text-danger">*</span>
+ </label>
+ <input asp-for="UserData.EmailAddress" type="email" class="form-control" placeholder="example@email.com" required />
+        <span asp-validation-for="UserData.EmailAddress" class="text-danger"></span>
+    </div>
+
+      <div class="mb-3">
+     <label asp-for="UserData.PhoneNumber" class="form-label">
+          <i class="bi bi-telephone"></i> Số điện thoại <span class="text-danger">*</span>
+         </label>
+  <input asp-for="UserData.PhoneNumber" type="tel" class="form-control" placeholder="0912345678" pattern="[0-9]{10}" required />
+      <span asp-validation-for="UserData.PhoneNumber" class="text-danger"></span>
+       <div class="form-text">Nhập 10 chữ số</div>
+      </div>
+
+       <div class="mb-3">
+   <label asp-for="UserData.Address" class="form-label">
+        <i class="bi bi-geo-alt"></i> Địa chỉ <span class="text-danger">*</span>
+     </label>
+     <textarea asp-for="UserData.Address" class="form-control" rows="3" placeholder="Nhập địa chỉ" required></textarea>
+       <span asp-validation-for="UserData.Address" class="text-danger"></span>
+         </div>
+
+   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <a href="/UserManagment/ListAllUser" class="btn btn-secondary">
+     <i class="bi bi-x-circle"></i> Hủy
+        </a>
+       <button type="submit" class="btn btn-warning">
+    <i class="bi bi-check-circle"></i> Cập nhật
+      </button>
+       </div>
+         </form>
+           }
+ else
+    {
+      <div class="alert alert-warning" role="alert">
+  <i class="bi bi-exclamation-triangle"></i> Không tìm thấy thông tin người dùng.
+    </div>
+ <a href="/UserManagment/ListAllUser" class="btn btn-secondary">
+         <i class="bi bi-arrow-left"></i> Quay lại danh sách
+     </a>
+       }
+   </div>
+   </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    
+  <script>
+        // Set max date to today for birthdate
+     document.addEventListener('DOMContentLoaded', function() {
+       const birthdateInput = document.querySelector('input[type="date"]');
+          if (birthdateInput) {
+    const today = new Date().toISOString().split('T')[0];
+      birthdateInput.setAttribute('max', today);
+     }
+        });
+
+  // Phone number validation
+        document.querySelector('form')?.addEventListener('submit', function(e) {
+    const phoneInput = document.querySelector('input[type="tel"]');
+      const phoneValue = phoneInput?.value;
+     
+            if (phoneValue && !/^\d{10}$/.test(phoneValue)) {
+        e.preventDefault();
+           alert('Số điện thoại phải là 10 chữ số!');
+          phoneInput.focus();
+       return false;
+        }
+        });
+
+// Confirm before update
+     document.querySelector('form')?.addEventListener('submit', function(e) {
+  if (!confirm('Bạn có chắc chắn muốn cập nhật thông tin người dùng này?')) {
+ e.preventDefault();
+ return false;
+            }
+    });
+    </script>
+}

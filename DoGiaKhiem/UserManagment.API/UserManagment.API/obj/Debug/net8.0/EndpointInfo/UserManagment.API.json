@@ -73,14 +73,16 @@
             "description": "OK"
           }
         }
-      },
-      "delete": {
+      }
+    },
+    "/api/User/id": {
+      "get": {
         "tags": [
           "User"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "Id",
             "in": "query",
             "schema": {
               "type": "string",
@@ -95,15 +97,16 @@
         }
       }
     },
-    "/api/User/id": {
-      "get": {
+    "/api/User/{id}": {
+      "delete": {
         "tags": [
           "User"
         ],
         "parameters": [
           {
-            "name": "Id",
-            "in": "query",
+            "name": "id",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "string",
               "format": "uuid"

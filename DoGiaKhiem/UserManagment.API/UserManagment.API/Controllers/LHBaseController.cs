@@ -117,8 +117,8 @@ namespace UserManagment.API.Controllers
         /// HTTP 500 Internal Server Error nếu xóa thất bại
         /// </returns>
         /// Created by: DGKhiem (09/12/2025)
-        [HttpDelete]
-        public virtual IActionResult Delete( Guid id)
+        [HttpDelete("{id}")]
+        public virtual IActionResult Delete([FromRoute] Guid id)
         {
             // Kiểm tra entity có tồn tại không
             var exists = _baseService.GetById(id);

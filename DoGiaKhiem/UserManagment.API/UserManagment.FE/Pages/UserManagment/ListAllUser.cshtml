@@ -1,0 +1,171 @@
+﻿@page
+@using UserManagementApp.FE.Models
+@model UserManagementApp.FE.Pages.UserManagment.ListAllUserModel
+@{
+    ViewData["Title"] = "Danh sách người dùng";
+}
+
+<div class="container mt-4">
+    @* Hiển thị thông báo thành công nếu có *@
+    @if (!string.IsNullOrEmpty((string)TempData["SuccessMessage"]))
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="bi bi-check-circle-fill"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+    }
+
+    <div class="row mb-3">
+  <div class="col">
+    <h2>
+         <i class="bi bi-people-fill"></i> Danh sách người dùng
+  </h2>
+        </div>
+        <div class="col text-end">
+        <a href="/UserManagment/AddNewUser" class="btn btn-primary">
+         <i class="bi bi-plus-circle"></i> Thêm người dùng
+            </a>
+   </div>
+    </div>
+
+    @* Hiển thị thông báo lỗi nếu có *@
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+   <i class="bi bi-exclamation-triangle-fill"></i> @Model.ErrorMessage
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+}
+
+    @* Hiển thị bảng danh sách users *@
+    @if (Model.Users != null && Model.Users.Any())
+    {
+        <div class="card shadow">
+            <div class="card-body">
+   <div class="table-responsive">
+  <table class="table table-hover table-striped">
+    <thead class="table-dark">
+   <tr>
+          <th scope="col">#</th>
+          <th scope="col">Mã người dùng</th>
+      <th scope="col">Họ và tên</th>
+          <th scope="col">Ngày sinh</th>
+         <th scope="col">Email</th>
+           <th scope="col">Số điện thoại</th>
+          <th scope="col">Địa chỉ</th>
+            <th scope="col" class="text-center">Thao tác</th>
+    </tr>
+    </thead>
+            <tbody>
+      @for (int i = 0; i < Model.Users.Count; i++)
+         {
+           var user = Model.Users[i];
+         <tr>
+    <td>@(i + 1)</td>
+           <td>
+          <span class="badge bg-secondary font-monospace">
+   @user.UserId.ToString().Substring(0, 8)...
+      </span>
+              <button class="btn btn-sm btn-link p-0 ms-1" 
+ onclick="copyToClipboard('@user.UserId')" 
+     title="Copy ID đầy đủ">
+            <i class="bi bi-clipboard"></i>
+               </button>
+        </td>
+      <td>
+         <strong>@user.FullName</strong>
+        </td>
+   <td>
+@(user.BirthDate.HasValue ? user.BirthDate.Value.ToString("dd/MM/yyyy") : "N/A")
+     </td>
+             <td>
+             <a href="mailto:@user.EmailAddress">@user.EmailAddress</a>
+   </td>
+            <td>@user.PhoneNumber</td>
+  <td>@user.Address</td>
+         <td class="text-center">
+            <div class="btn-group" role="group">
+       <a href="/UserManagment/UpdateUserInfo?id=@user.UserId" class="btn btn-sm btn-warning" title="Sửa">
+     <i class="bi bi-pencil-square"></i>
+    </a>
+          <button type="button" class="btn btn-sm btn-danger" onclick="confirmDelete('@user.UserId', '@user.FullName')" title="Xóa">
+    <i class="bi bi-trash"></i>
+    </button>
+  </div>
+        </td>
+           </tr>
+       }
+   </tbody>
+     </table>
+      </div>
+
+      <div class="mt-3">
+             <p class="text-muted">
+     <i class="bi bi-info-circle"></i> Tổng số: <strong>@Model.Users.Count</strong> người dùng
+            </p>
+           </div>
+    </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info" role="alert">
+            <i class="bi bi-info-circle"></i> Chưa có dữ liệu người dùng. Vui lòng thêm người dùng mới.
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        const apiBaseUrl = '@Model.ApiBaseUrl';
+
+        // Hàm copy UserId vào clipboard
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(function() {
+        // Tạo toast notification
+   const toast = document.createElement('div');
+                toast.className = 'position-fixed top-0 end-0 p-3';
+     toast.style.zIndex = '9999';
+      toast.innerHTML = `
+           <div class="toast show" role="alert">
+  <div class="toast-header bg-success text-white">
+       <i class="bi bi-check-circle me-2"></i>
+  <strong class="me-auto">Thành công</strong>
+ <button type="button" class="btn-close btn-close-white" onclick="this.closest('.position-fixed').remove()"></button>
+      </div>
+               <div class="toast-body">
+            Đã copy ID: <code>${text}</code>
+     </div>
+           </div>
+         `;
+document.body.appendChild(toast);
+     setTimeout(() => toast.remove(), 3000);
+      }).catch(function(err) {
+          alert('Lỗi khi copy: ' + err);
+        });
+        }
+
+        function confirmDelete(userId, userName) {
+            if (confirm(`Bạn có chắc chắn muốn xóa người dùng "${userName}"?`)) {
+    deleteUser(userId);
+            }
+        }
+
+        async function deleteUser(userId) {
+   try {
+      const response = await fetch(`${apiBaseUrl}/User/${userId}`, {
+  method: 'DELETE'
+    });
+
+     if (response.ok) {
+        alert('Xóa người dùng thành công!');
+      location.reload();
+  } else {
+alert('Lỗi khi xóa người dùng!');
+      }
+      } catch (error) {
+    alert('Lỗi: ' + error.message);
+      }
+  }
+    </script>
+}

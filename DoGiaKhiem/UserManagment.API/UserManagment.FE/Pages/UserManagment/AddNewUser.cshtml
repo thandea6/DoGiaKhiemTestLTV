@@ -1,0 +1,110 @@
+﻿@page
+@using UserManagementApp.FE.Models
+@model UserManagementApp.FE.Pages.UserManagment.AddNewUserModel
+@{
+    ViewData["Title"] = "Thêm người dùng mới";
+}
+
+<div class="container mt-4">
+    <div class="row">
+  <div class="col-md-8 offset-md-2">
+       <div class="card shadow">
+ <div class="card-header bg-primary text-white">
+   <h3 class="mb-0">
+  <i class="bi bi-person-plus-fill"></i> Thêm người dùng mới
+          </h3>
+            </div>
+   <div class="card-body">
+      @* Hiển thị thông báo lỗi *@
+      @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+     {
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+         <i class="bi bi-exclamation-triangle-fill"></i> @Model.ErrorMessage
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+   }
+
+         <form method="post">
+   <div class="mb-3">
+       <label asp-for="UserInput.FullName" class="form-label">
+ <i class="bi bi-person"></i> Họ và tên <span class="text-danger">*</span>
+      </label>
+<input asp-for="UserInput.FullName" class="form-control" placeholder="Nhập họ và tên" required />
+  <span asp-validation-for="UserInput.FullName" class="text-danger"></span>
+ </div>
+
+<div class="mb-3">
+      <label asp-for="UserInput.BirthDate" class="form-label">
+      <i class="bi bi-calendar"></i> Ngày sinh <span class="text-danger">*</span>
+              </label>
+ <input asp-for="UserInput.BirthDate" type="date" class="form-control" required />
+   <span asp-validation-for="UserInput.BirthDate" class="text-danger"></span>
+         </div>
+
+       <div class="mb-3">
+    <label asp-for="UserInput.EmailAddress" class="form-label">
+      <i class="bi bi-envelope"></i> Email <span class="text-danger">*</span>
+        </label>
+     <input asp-for="UserInput.EmailAddress" type="email" class="form-control" placeholder="example@email.com" required />
+         <span asp-validation-for="UserInput.EmailAddress" class="text-danger"></span>
+             </div>
+
+    <div class="mb-3">
+              <label asp-for="UserInput.PhoneNumber" class="form-label">
+  <i class="bi bi-telephone"></i> Số điện thoại <span class="text-danger">*</span>
+</label>
+     <input asp-for="UserInput.PhoneNumber" type="tel" class="form-control" placeholder="0912345678" pattern="[0-9]{10}" required />
+        <span asp-validation-for="UserInput.PhoneNumber" class="text-danger"></span>
+            <div class="form-text">Nhập 10 chữ số</div>
+            </div>
+
+      <div class="mb-3">
+   <label asp-for="UserInput.Address" class="form-label">
+ <i class="bi bi-geo-alt"></i> Địa chỉ <span class="text-danger">*</span>
+           </label>
+        <textarea asp-for="UserInput.Address" class="form-control" rows="3" placeholder="Nhập địa chỉ" required></textarea>
+           <span asp-validation-for="UserInput.Address" class="text-danger"></span>
+    </div>
+
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <a href="/UserManagment/ListAllUser" class="btn btn-secondary">
+                 <i class="bi bi-x-circle"></i> Hủy
+       </a>
+             <button type="submit" class="btn btn-primary">
+      <i class="bi bi-check-circle"></i> Thêm người dùng
+            </button>
+        </div>
+    </form>
+       </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    
+    <script>
+        // Set max date to today for birthdate
+    document.addEventListener('DOMContentLoaded', function() {
+ const birthdateInput = document.querySelector('input[type="date"]');
+      if (birthdateInput) {
+  const today = new Date().toISOString().split('T')[0];
+      birthdateInput.setAttribute('max', today);
+   }
+        });
+
+        // Phone number validation
+   document.querySelector('form').addEventListener('submit', function(e) {
+            const phoneInput = document.querySelector('input[type="tel"]');
+ const phoneValue = phoneInput.value;
+            
+     if (!/^\d{10}$/.test(phoneValue)) {
+   e.preventDefault();
+     alert('Số điện thoại phải là 10 chữ số!');
+        phoneInput.focus();
+      return false;
+            }
+        });
+    </script>
+}
