@@ -9,7 +9,7 @@ using UserManagment.Core.Interfaces.Repositories;
 
 namespace UserManagment.Infrastructure.Repositories
 {
-    public class UserRepository : BaseRepository<User>, IUserRepository
+    public class UserRepository : BaseRepository<Users>, IUserRepository
     {
         public UserRepository(IConfiguration config) : base(config)
         {

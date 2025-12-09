@@ -1,12 +1,44 @@
 [
   {
-    "ContainingType": "UserManagment.API.Controllers.LHBaseController\u00601[[UserManagment.Core.Entities.User, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-    "Method": "Get",
+    "ContainingType": "UserManagment.API.Controllers.UserController",
+    "Method": "Insert",
+    "RelativePath": "api/User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "UserManagment.Core.Dtos.UserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserManagment.API.Controllers.LHBaseController\u00602[[UserManagment.Core.Entities.Users, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserManagment.Core.Dtos.UserDTO, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAll",
     "RelativePath": "api/User",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserManagment.API.Controllers.LHBaseController\u00602[[UserManagment.Core.Entities.Users, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserManagment.Core.Dtos.UserDTO, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "api/User/id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

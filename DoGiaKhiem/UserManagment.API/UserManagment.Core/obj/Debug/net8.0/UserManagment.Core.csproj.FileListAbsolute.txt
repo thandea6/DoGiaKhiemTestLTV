@@ -9,3 +9,15 @@ D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagmen
 D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\refint\UserManagment.Core.dll
 D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.pdb
 D:\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\ref\UserManagment.Core.dll
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\bin\Debug\net8.0\UserManagment.Core.deps.json
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\bin\Debug\net8.0\UserManagment.Core.dll
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\bin\Debug\net8.0\UserManagment.Core.pdb
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.AssemblyInfoInputs.cache
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.AssemblyInfo.cs
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.csproj.CoreCompileInputs.cache
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.sourcelink.json
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.dll
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\refint\UserManagment.Core.dll
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\UserManagment.Core.pdb
+D:\DoGiaKhiemTestLTV\DoGiaKhiem\UserManagment.API\UserManagment.Core\obj\Debug\net8.0\ref\UserManagment.Core.dll

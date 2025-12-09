@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj": {}
+    "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\UserManagment.Core.csproj": {
+    "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\UserManagment.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\UserManagment.Core.csproj",
+        "projectUniqueName": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\UserManagment.Core.csproj",
         "projectName": "UserManagment.Core",
-        "projectPath": "D:\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\UserManagment.Core.csproj",
+        "projectPath": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\UserManagment.Core.csproj",
         "packagesPath": "C:\\Users\\My Laptop\\.nuget\\packages\\",
-        "outputPath": "D:\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\obj\\",
+        "outputPath": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj": {
+    "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj",
+        "projectUniqueName": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj",
         "projectName": "UserManagment.Infrastructure",
-        "projectPath": "D:\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj",
+        "projectPath": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\My Laptop\\.nuget\\packages\\",
-        "outputPath": "D:\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\obj\\",
+        "outputPath": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\UserManagment.Core.csproj": {
-                "projectPath": "D:\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\UserManagment.Core.csproj"
+              "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\UserManagment.Core.csproj": {
+                "projectPath": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\UserManagment.Core.csproj"
               }
             }
           }

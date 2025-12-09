@@ -1,11 +1,14 @@
+﻿using UserManagment.Core.Dtos;
+using UserManagment.Core.Entities;
 using UserManagment.Core.Interfaces.Repositories;
 using UserManagment.Core.Interfaces.Services;
 using UserManagment.Core.Services;
+using UserManagment.Infrastructure.Mappers;
 using UserManagment.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//c?u h�nh Dapper ?? �nh x? t�n thu?c t�nh v?i d?u g?ch d??i
+//Cấu hỉnh Dapper để map các thuộc tính có dấu gạch dưới với thuộc tính trong class
 Dapper.DefaultTypeMap.MatchNamesWithUnderscores = true;
 // Add services to the container.
 
@@ -19,6 +22,8 @@ builder.Services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>));
 
 builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 
+// Register mappers
+builder.Services.AddScoped<IMapperService<UserDTO, Users>, UserMapper>();
 
 var app = builder.Build();
 
