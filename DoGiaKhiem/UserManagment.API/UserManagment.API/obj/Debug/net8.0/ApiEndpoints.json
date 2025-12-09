@@ -16,6 +16,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "UserManagment.API.Controllers.UserController",
+    "Method": "Update",
+    "RelativePath": "api/User",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "UserManagment.Core.Entities.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "UserManagment.API.Controllers.LHBaseController\u00602[[UserManagment.Core.Entities.Users, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserManagment.Core.Dtos.UserDTO, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "GetAll",
     "RelativePath": "api/User",
@@ -23,6 +39,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserManagment.API.Controllers.LHBaseController\u00602[[UserManagment.Core.Entities.Users, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[UserManagment.Core.Dtos.UserDTO, UserManagment.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/User",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

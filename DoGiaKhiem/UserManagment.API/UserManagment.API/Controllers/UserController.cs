@@ -54,5 +54,44 @@ namespace UserManagment.API.Controllers
             // Gọi phương thức Insert từ base class để xử lý logic chung
             return base.Insert(dto);
         }
+
+        /// <summary>
+        /// API cập nhật thông tin người dùng với xác thực dữ liệu
+        /// Override method Update từ base class để thêm validation logic
+        /// </summary>
+        /// <param name="entity">Đối tượng Users chứa thông tin mới cần cập nhật</param>
+        /// <returns>
+        /// HTTP 200 OK với thông tin người dùng đã được cập nhật, hoặc
+        /// HTTP 400 Bad Request nếu dữ liệu không hợp lệ,
+        /// HTTP 404 Not Found nếu không tìm thấy người dùng
+        /// </returns>
+        /// Created by: DGKhiem (09/12/2025)
+        [HttpPut]
+        public override IActionResult Update(Users entity)
+        {
+            // Kiểm tra user có tồn tại không
+	        var exists = _baseService.GetById(entity.UserId);
+	        if (exists == null)
+	        {
+		        return NotFound($"Không tìm thấy người dùng với ID: {entity.UserId}");
+	        }
+
+            // Kiểm tra định dạng email
+            if (!ValidationHelper.IsValidEmail(entity.EmailAddress))
+            {
+                return BadRequest("Định dạng email không hợp lệ.");
+            }
+
+            // Kiểm tra định dạng số điện thoại (phải là 10 chữ số)
+            if (!ValidationHelper.IsValidPhoneNumber(entity.PhoneNumber))
+            {
+                return BadRequest("Định dạng số điện thoại không hợp lệ. Phải là 10 chữ số.");
+            }
+
+            // Gọi service để cập nhật
+	        var res = _baseService.Update(entity);
+	        return Ok(res);
+        }
+
     }
 }

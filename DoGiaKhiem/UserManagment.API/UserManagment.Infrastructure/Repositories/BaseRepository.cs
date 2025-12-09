@@ -65,13 +65,6 @@ namespace UserManagment.Infrastructure.Repositories
             {
                 var sql = $"SELECT * FROM {_tableName}";
                 var result = dbConnection.Query<T>(sql);
-
-                Console.WriteLine("Dữ liệu trả về từ cơ sở dữ liệu:");
-                foreach (var item in result)
-                {
-                    Console.WriteLine($"ID: {item.GetType().GetProperty("UserId")?.GetValue(item)}, Name: {item.GetType().GetProperty("FullName")?.GetValue(item)}");
-                }
-
                 return result;
             }
             catch (Exception ex)

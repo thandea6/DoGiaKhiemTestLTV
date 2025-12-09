@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{6A06947A-7634-4900-8293-9F22AED637B5}|UserManagment.API\\UserManagment.API.csproj|solutionrelative:usermanagment.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{41D2C377-A3E1-498E-A1D1-3072E162C5E7}|UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41D2C377-A3E1-498E-A1D1-3072E162C5E7}|UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj|solutionrelative:usermanagment.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.core\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|solutionrelative:usermanagment.core\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 33,
+          "SelectedChildIndex": 34,
           "Children": [
             {
               "$type": "Bookmark",
@@ -155,12 +159,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "UserManagment.Infrastructure\\Repositories\\BaseRepository.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "UserManagment.Infrastructure\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAArwCsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T02:11:10.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BaseService.cs",
               "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Services\\BaseService.cs",
               "RelativeDocumentMoniker": "UserManagment.Core\\Services\\BaseService.cs",
               "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Services\\BaseService.cs",
               "RelativeToolTip": "UserManagment.Core\\Services\\BaseService.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T02:07:48.352Z",
               "EditorCaption": ""
@@ -173,7 +190,7 @@
               "RelativeDocumentMoniker": "UserManagment.API\\Controllers\\LHBaseController.cs",
               "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.API\\Controllers\\LHBaseController.cs",
               "RelativeToolTip": "UserManagment.API\\Controllers\\LHBaseController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwBIAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAApwHgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T02:01:27.251Z",
               "EditorCaption": ""
@@ -186,7 +203,7 @@
               "RelativeDocumentMoniker": "UserManagment.API\\Controllers\\UserController.cs",
               "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.API\\Controllers\\UserController.cs",
               "RelativeToolTip": "UserManagment.API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAApwGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T02:01:20.078Z",
               "EditorCaption": ""
