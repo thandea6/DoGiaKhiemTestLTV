@@ -15,11 +15,13 @@ namespace UserManagment.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
                 var data = _baseService.GetAll();
 
                 return Ok(data);
         }
+
+
     }
 }

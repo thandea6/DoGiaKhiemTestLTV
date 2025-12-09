@@ -6,9 +6,9 @@ namespace UserManagment.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : LHBaseController<User>
+    public class UserController : LHBaseController<Users>
     {
-        public UserController(IBaseService<User> baseService) : base(baseService)
+        public UserController(IBaseService<Users> baseService) : base(baseService)
         {
         }
     }

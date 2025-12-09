@@ -7,7 +7,7 @@ using UserManagment.Core.Entities;
 
 namespace UserManagment.Core.Interfaces.Repositories
 {
-    public interface IUserRepository : IBaseRepository<User>
+    public interface IUserRepository : IBaseRepository<Users>
     {
     }
 }

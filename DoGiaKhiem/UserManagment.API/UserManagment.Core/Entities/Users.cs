@@ -13,7 +13,7 @@ namespace UserManagment.Core.Entities
     /// </summary>
     /// CreatedBy: DGKhiem(08/12/2025)
     [Table("Users")]
-    public class User
+    public class Users
     {
         /// <summary>
         /// Id nguời dùng

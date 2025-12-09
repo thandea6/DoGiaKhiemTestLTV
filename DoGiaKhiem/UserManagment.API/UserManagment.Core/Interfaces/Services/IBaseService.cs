@@ -12,6 +12,6 @@ namespace UserManagment.Core.Interfaces.Services
         T GetById(Guid entityId);
         T Add(T entity);
         T Update(T entity);
-        void Delete(Guid entityId);
+        bool Delete(Guid entityId);
     }
 }

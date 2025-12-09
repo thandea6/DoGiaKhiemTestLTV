@@ -7,7 +7,7 @@ using UserManagment.Core.Entities;
 
 namespace UserManagment.Core.Interfaces.Services
 {
-    public interface IUserService : IBaseService<User>
+    public interface IUserService : IBaseService<Users>
     {
     }
 }

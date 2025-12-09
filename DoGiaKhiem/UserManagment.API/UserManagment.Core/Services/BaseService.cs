@@ -18,12 +18,34 @@ namespace UserManagment.Core.Services
         }
         public T Add(T entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var res = _repository.Add(entity);
+                return res;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error inserting entity", ex);
+            }
         }
 
-        public void Delete(Guid entityId)
+        public bool Delete(Guid entityId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var idExist = _repository.GetById(entityId);
+                if (idExist == null)
+                {
+                    return false;
+                }
+
+                _repository.Delete(entityId);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error deleting entity", ex);
+            }
         }
 
         public IEnumerable<T> GetAll()
@@ -41,12 +63,28 @@ namespace UserManagment.Core.Services
 
         public T GetById(Guid entityId)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var data = _repository.GetById(entityId);
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error retrieving entity with ID: {entityId}", ex);
+            }
         }
 
         public T Update(T entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var data = _repository.Update(entity);
+                return data;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error updating entity", ex);
+            }
         }
     }
 }

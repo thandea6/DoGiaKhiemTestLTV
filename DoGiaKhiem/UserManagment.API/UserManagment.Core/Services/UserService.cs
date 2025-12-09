@@ -9,7 +9,7 @@ using UserManagment.Core.Interfaces.Services;
 
 namespace UserManagment.Core.Services
 {
-    public class UserService : BaseService<User>, IUserService
+    public class UserService : BaseService<Users>, IUserService
     {
         public UserService(IUserRepository repository) : base(repository)
         {
