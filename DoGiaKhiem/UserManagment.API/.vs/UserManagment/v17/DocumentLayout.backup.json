@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\pages\\usermanagment\\updateuserinfo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|solutionrelative:usermanagment.fe\\pages\\usermanagment\\updateuserinfo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\pages\\usermanagment\\updateuserinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|solutionrelative:usermanagment.fe\\pages\\usermanagment\\updateuserinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\pages\\usermanagment\\listalluser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|solutionrelative:usermanagment.fe\\pages\\usermanagment\\listalluser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\pages\\usermanagment\\listalluser.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|solutionrelative:usermanagment.fe\\pages\\usermanagment\\listalluser.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\pages\\usermanagment\\listalluser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|solutionrelative:usermanagment.fe\\pages\\usermanagment\\listalluser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -159,6 +163,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UpdateUserInfo.cshtml.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
+              "RelativeDocumentMoniker": "UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
+              "RelativeToolTip": "UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwKAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T11:20:27.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UpdateUserInfo.cshtml",
               "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml",
               "RelativeDocumentMoniker": "UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml",
@@ -171,13 +188,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ListAllUser.cshtml",
               "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml",
               "RelativeDocumentMoniker": "UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml",
               "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml",
               "RelativeToolTip": "UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAtwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-09T11:03:24.56Z",
               "EditorCaption": ""
@@ -190,14 +207,14 @@
               "RelativeDocumentMoniker": "UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml.cs",
               "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml.cs",
               "RelativeToolTip": "UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA1wEgAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwEgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T11:02:32.176Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Program.cs",
               "RelativeDocumentMoniker": "UserManagment.FE\\Program.cs",

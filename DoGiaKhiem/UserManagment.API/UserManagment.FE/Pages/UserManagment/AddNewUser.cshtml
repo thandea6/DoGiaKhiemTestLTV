@@ -12,21 +12,21 @@
  <div class="card-header bg-primary text-white">
    <h3 class="mb-0">
   <i class="bi bi-person-plus-fill"></i> Thêm người dùng mới
-          </h3>
-            </div>
+   </h3>
+    </div>
    <div class="card-body">
-      @* Hiển thị thông báo lỗi *@
-      @if (!string.IsNullOrEmpty(Model.ErrorMessage))
-     {
+  @* Hiển thị thông báo lỗi *@
+   @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+   {
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
-         <i class="bi bi-exclamation-triangle-fill"></i> @Model.ErrorMessage
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
+<i class="bi bi-exclamation-triangle-fill"></i> @Model.ErrorMessage
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
    }
 
-         <form method="post">
+  <form method="post" id="addUserForm">
    <div class="mb-3">
-       <label asp-for="UserInput.FullName" class="form-label">
+   <label asp-for="UserInput.FullName" class="form-label">
  <i class="bi bi-person"></i> Họ và tên <span class="text-danger">*</span>
       </label>
 <input asp-for="UserInput.FullName" class="form-control" placeholder="Nhập họ và tên" required />
@@ -35,49 +35,51 @@
 
 <div class="mb-3">
       <label asp-for="UserInput.BirthDate" class="form-label">
-      <i class="bi bi-calendar"></i> Ngày sinh <span class="text-danger">*</span>
-              </label>
- <input asp-for="UserInput.BirthDate" type="date" class="form-control" required />
+   <i class="bi bi-calendar"></i> Ngày sinh <span class="text-danger">*</span>
+    </label>
+  <input asp-for="UserInput.BirthDate" type="text" class="form-control" id="birthDateInput" 
+          placeholder="dd/MM/yyyy" pattern="\d{2}/\d{2}/\d{4}" required />
    <span asp-validation-for="UserInput.BirthDate" class="text-danger"></span>
-         </div>
+   <div class="form-text">Định dạng: ngày/tháng/năm (VD: 15/01/1990)</div>
+     </div>
 
-       <div class="mb-3">
+<div class="mb-3">
     <label asp-for="UserInput.EmailAddress" class="form-label">
       <i class="bi bi-envelope"></i> Email <span class="text-danger">*</span>
-        </label>
+ </label>
      <input asp-for="UserInput.EmailAddress" type="email" class="form-control" placeholder="example@email.com" required />
-         <span asp-validation-for="UserInput.EmailAddress" class="text-danger"></span>
-             </div>
+     <span asp-validation-for="UserInput.EmailAddress" class="text-danger"></span>
+</div>
 
     <div class="mb-3">
-              <label asp-for="UserInput.PhoneNumber" class="form-label">
+      <label asp-for="UserInput.PhoneNumber" class="form-label">
   <i class="bi bi-telephone"></i> Số điện thoại <span class="text-danger">*</span>
 </label>
-     <input asp-for="UserInput.PhoneNumber" type="tel" class="form-control" placeholder="0912345678" pattern="[0-9]{10}" required />
-        <span asp-validation-for="UserInput.PhoneNumber" class="text-danger"></span>
-            <div class="form-text">Nhập 10 chữ số</div>
-            </div>
+ <input asp-for="UserInput.PhoneNumber" type="tel" class="form-control" placeholder="0912345678" pattern="[0-9]{10}" required />
+   <span asp-validation-for="UserInput.PhoneNumber" class="text-danger"></span>
+ <div class="form-text">Nhập 10 chữ số</div>
+         </div>
 
       <div class="mb-3">
    <label asp-for="UserInput.Address" class="form-label">
  <i class="bi bi-geo-alt"></i> Địa chỉ <span class="text-danger">*</span>
-           </label>
-        <textarea asp-for="UserInput.Address" class="form-control" rows="3" placeholder="Nhập địa chỉ" required></textarea>
-           <span asp-validation-for="UserInput.Address" class="text-danger"></span>
+    </label>
+     <textarea asp-for="UserInput.Address" class="form-control" rows="3" placeholder="Nhập địa chỉ" required></textarea>
+ <span asp-validation-for="UserInput.Address" class="text-danger"></span>
     </div>
 
   <div class="d-grid gap-2 d-md-flex justify-content-md-end">
       <a href="/UserManagment/ListAllUser" class="btn btn-secondary">
-                 <i class="bi bi-x-circle"></i> Hủy
-       </a>
-             <button type="submit" class="btn btn-primary">
+        <i class="bi bi-x-circle"></i> Hủy
+</a>
+      <button type="submit" class="btn btn-primary">
       <i class="bi bi-check-circle"></i> Thêm người dùng
-            </button>
-        </div>
+       </button>
+    </div>
     </form>
        </div>
         </div>
-        </div>
+  </div>
     </div>
 </div>
 
@@ -85,26 +87,73 @@
     <partial name="_ValidationScriptsPartial" />
     
     <script>
-        // Set max date to today for birthdate
-    document.addEventListener('DOMContentLoaded', function() {
- const birthdateInput = document.querySelector('input[type="date"]');
-      if (birthdateInput) {
-  const today = new Date().toISOString().split('T')[0];
-      birthdateInput.setAttribute('max', today);
-   }
-        });
+     document.addEventListener('DOMContentLoaded', function() {
+    const birthDateInput = document.getElementById('birthDateInput');
+    const form = document.getElementById('addUserForm');
 
-        // Phone number validation
-   document.querySelector('form').addEventListener('submit', function(e) {
-            const phoneInput = document.querySelector('input[type="tel"]');
- const phoneValue = phoneInput.value;
-            
-     if (!/^\d{10}$/.test(phoneValue)) {
+ // Format ngày khi user nhập (tự động thêm dấu /)
+   birthDateInput.addEventListener('input', function(e) {
+          let value = e.target.value.replace(/\D/g, ''); // Chỉ giữ số
+   
+         if (value.length >= 2) {
+      value = value.substring(0, 2) + '/' + value.substring(2);
+      }
+if (value.length >= 5) {
+        value = value.substring(0, 5) + '/' + value.substring(5, 9);
+     }
+        
+        e.target.value = value;
+         });
+
+        // Validate ngày trước khi submit
+  form.addEventListener('submit', function(e) {
+     const birthDateValue = birthDateInput.value;
+    const phoneInput = document.querySelector('input[type="tel"]');
+const phoneValue = phoneInput.value;
+
+    // Validate định dạng ngày dd/MM/yyyy
+        const datePattern = /^(\d{2})\/(\d{2})\/(\d{4})$/;
+        const match = birthDateValue.match(datePattern);
+
+ if (!match) {
+    e.preventDefault();
+          alert('Ngày sinh không đúng định dạng dd/MM/yyyy!');
+       birthDateInput.focus();
+    return false;
+         }
+
+    const day = parseInt(match[1], 10);
+    const month = parseInt(match[2], 10);
+       const year = parseInt(match[3], 10);
+
+         // Validate ngày và tháng hợp lệ
+             if (month < 1 || month > 12 || day < 1 || day > 31) {
    e.preventDefault();
-     alert('Số điện thoại phải là 10 chữ số!');
-        phoneInput.focus();
-      return false;
-            }
+     alert('Ngày hoặc tháng không hợp lệ!');
+ birthDateInput.focus();
+    return false;
+    }
+
+  // Validate ngày tồn tại trong tháng
+    const date = new Date(year, month - 1, day);
+        if (date.getDate() !== day || date.getMonth() !== month - 1 || date.getFullYear() !== year) {
+e.preventDefault();
+       alert('Ngày không tồn tại trong tháng này!');
+       birthDateInput.focus();
+  return false;
+      }
+
+       // Validate số điện thoại
+  if (!/^\d{10}$/.test(phoneValue)) {
+      e.preventDefault();
+   alert('Số điện thoại phải là 10 chữ số!');
+     phoneInput.focus();
+         return false;
+  }
+
+     // Convert dd/MM/yyyy sang yyyy-MM-dd cho server
+          birthDateInput.value = `${year}-${month.toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`;
+   });
         });
-    </script>
+  </script>
 }
