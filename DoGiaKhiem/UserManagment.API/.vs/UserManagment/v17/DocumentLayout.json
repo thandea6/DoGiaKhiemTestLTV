@@ -3,24 +3,48 @@
   "WorkspaceRootPath": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\pages\\usermanagment\\updateuserinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|solutionrelative:usermanagment.fe\\pages\\usermanagment\\updateuserinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.core\\services\\automapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|solutionrelative:usermanagment.core\\services\\automapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\pages\\usermanagment\\updateuserinfo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|solutionrelative:usermanagment.fe\\pages\\usermanagment\\updateuserinfo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.core\\services\\basemapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|solutionrelative:usermanagment.core\\services\\basemapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\pages\\usermanagment\\addnewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|solutionrelative:usermanagment.fe\\pages\\usermanagment\\addnewuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.core\\interfaces\\services\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|solutionrelative:usermanagment.core\\interfaces\\services\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|solutionrelative:usermanagment.fe\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.core\\interfaces\\services\\imapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|solutionrelative:usermanagment.core\\interfaces\\services\\imapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.core\\interfaces\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|solutionrelative:usermanagment.core\\interfaces\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|solutionrelative:usermanagment.core\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.core\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|solutionrelative:usermanagment.core\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.core\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4813C37C-2126-435C-AAA7-014F63E0508E}|UserManagment.Core\\UserManagment.Core.csproj|solutionrelative:usermanagment.core\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41D2C377-A3E1-498E-A1D1-3072E162C5E7}|UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.infrastructure\\mappers\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41D2C377-A3E1-498E-A1D1-3072E162C5E7}|UserManagment.Infrastructure\\UserManagment.Infrastructure.csproj|solutionrelative:usermanagment.infrastructure\\mappers\\usermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\pages\\usermanagment\\listalluser.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|solutionrelative:usermanagment.fe\\pages\\usermanagment\\listalluser.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\pages\\usermanagment\\updateuserinfo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|solutionrelative:usermanagment.fe\\pages\\usermanagment\\updateuserinfo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67D81857-A581-4BB3-BC2A-2BD6B4EF43BC}|UserManagment.FE\\UserManagment.FE.csproj|d:\\dogiakhiemtestltv\\dogiakhiem\\usermanagment.api\\usermanagment.fe\\pages\\usermanagment\\listalluser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -34,34 +58,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 35,
+          "SelectedChildIndex": 33,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddNewUser.cshtml",
-              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\AddNewUser.cshtml",
-              "RelativeDocumentMoniker": "UserManagment.FE\\Pages\\UserManagment\\AddNewUser.cshtml",
-              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\AddNewUser.cshtml",
-              "RelativeToolTip": "UserManagment.FE\\Pages\\UserManagment\\AddNewUser.cshtml",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAtwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-09T11:29:52.068Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\appsettings.json",
-              "RelativeDocumentMoniker": "UserManagment.FE\\appsettings.json",
-              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\appsettings.json",
-              "RelativeToolTip": "UserManagment.FE\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-09T11:27:18.776Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:16:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -192,33 +190,137 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdateUserInfo.cshtml.cs",
-              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
-              "RelativeDocumentMoniker": "UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
-              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
-              "RelativeToolTip": "UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Interfaces\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "UserManagment.Core\\Interfaces\\Services\\IUserService.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Interfaces\\Services\\IUserService.cs",
+              "RelativeToolTip": "UserManagment.Core\\Interfaces\\Services\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T11:20:27.266Z",
+              "WhenOpened": "2025-12-09T11:48:34.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UpdateUserInfo.cshtml",
-              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml",
-              "RelativeDocumentMoniker": "UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml",
-              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml",
-              "RelativeToolTip": "UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAtwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-09T11:19:22.97Z",
+              "Title": "AutoMapperService.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Services\\AutoMapperService.cs",
+              "RelativeDocumentMoniker": "UserManagment.Core\\Services\\AutoMapperService.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Services\\AutoMapperService.cs",
+              "RelativeToolTip": "UserManagment.Core\\Services\\AutoMapperService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwBAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T11:48:33.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "UserManagment.Core\\Services\\UserService.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Services\\UserService.cs",
+              "RelativeToolTip": "UserManagment.Core\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T11:48:32.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Services\\BaseService.cs",
+              "RelativeDocumentMoniker": "UserManagment.Core\\Services\\BaseService.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Services\\BaseService.cs",
+              "RelativeToolTip": "UserManagment.Core\\Services\\BaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T11:48:30.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseMapperService.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Services\\BaseMapperService.cs",
+              "RelativeDocumentMoniker": "UserManagment.Core\\Services\\BaseMapperService.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Services\\BaseMapperService.cs",
+              "RelativeToolTip": "UserManagment.Core\\Services\\BaseMapperService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T11:48:08.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IMapperService.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Interfaces\\Services\\IMapperService.cs",
+              "RelativeDocumentMoniker": "UserManagment.Core\\Interfaces\\Services\\IMapperService.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Interfaces\\Services\\IMapperService.cs",
+              "RelativeToolTip": "UserManagment.Core\\Interfaces\\Services\\IMapperService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T11:47:09.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IBaseService.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Interfaces\\Services\\IBaseService.cs",
+              "RelativeDocumentMoniker": "UserManagment.Core\\Interfaces\\Services\\IBaseService.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Interfaces\\Services\\IBaseService.cs",
+              "RelativeToolTip": "UserManagment.Core\\Interfaces\\Services\\IBaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T11:47:08.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "UserManagment.Core\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Core\\Interfaces\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "UserManagment.Core\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T11:47:01.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserMapper.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\Mappers\\UserMapper.cs",
+              "RelativeDocumentMoniker": "UserManagment.Infrastructure\\Mappers\\UserMapper.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.Infrastructure\\Mappers\\UserMapper.cs",
+              "RelativeToolTip": "UserManagment.Infrastructure\\Mappers\\UserMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T11:45:23.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateUserInfo.cshtml.cs",
+              "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
+              "RelativeDocumentMoniker": "UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
+              "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
+              "RelativeToolTip": "UserManagment.FE\\Pages\\UserManagment\\UpdateUserInfo.cshtml.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T11:44:12.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ListAllUser.cshtml",
               "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml",
               "RelativeDocumentMoniker": "UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml",
@@ -231,13 +333,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "ListAllUser.cshtml.cs",
               "DocumentMoniker": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml.cs",
               "RelativeDocumentMoniker": "UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml.cs",
               "ToolTip": "D:\\DoGiaKhiemTestLTV\\DoGiaKhiem\\UserManagment.API\\UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml.cs",
               "RelativeToolTip": "UserManagment.FE\\Pages\\UserManagment\\ListAllUser.cshtml.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwEgAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T11:02:32.176Z",
               "EditorCaption": ""

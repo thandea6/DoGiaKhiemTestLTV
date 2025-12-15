@@ -11,6 +11,10 @@ namespace UserManagment.Infrastructure.Repositories
 {
     public class UserRepository : BaseRepository<Users>, IUserRepository
     {
+        /// <summary>
+        /// khởi tạo UserRepository
+        /// </summary>
+        /// <param name="config"></param>
         public UserRepository(IConfiguration config) : base(config)
         {
         }
